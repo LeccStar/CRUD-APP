@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1 class="text">Calculadora de Gastos mensual 😎</h1>
-    <form action=""></form>
+    <div class="container">
+        <form action="">
+            <p class="textoDeForm">En esta calculadora puedes ir anotando los gastos que vayas jaciendo en el mes, para asi poder llevar un
+                mejor control de tu presupuesto.</p>
+            <label class="label textoDeForm" for="budget">Pirmero establece un presupuesto con el que quieras comparar tus gastos.
+                Puede ser tu ingreso mensual.
+            </label>
+            <input type="number" name="budget">
+            <select name="moneda" id="">
+                <option value="MXN">MXN</option>
+                <option value="USD">USD</option>
+            </select>
+            <button>Actualizar presupuesto</button>
+        </form>
+        <table></table>
+    </div>
     <script src="./main.js"></script>
 </body>
+
 </html>

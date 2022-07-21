@@ -1,6 +1,5 @@
 body{
     width: 100vw;
-    height: 100vh;
     background-image: url(./MEDIA/—Pngtree—golden\ falling\ stars_4604988.png), linear-gradient(#1F2440,#464AA6);
     background-size: 110px;
     margin: 0;
@@ -8,7 +7,30 @@ body{
     flex-direction: column;
     justify-content: space-between;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
     text-align: center;
     color: #F2E205;
     text-shadow: #15182b 0 0 30px;
+}
+.container {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+form{
+    width: 20rem;
+    height: 35rem;
+    background-color: rgb(31, 37, 65, 0.90);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+.textoDeForm{
+    margin: .5rem 1rem .5rem 1rem;
+    text-align: justify;
+}
+.label{
+    font-size: .8em;
+    display: flex;
 }
