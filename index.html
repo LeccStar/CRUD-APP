@@ -12,20 +12,56 @@
 <body>
     <h1 class="text">Calculadora de Gastos mensual 😎</h1>
     <div class="container">
-        <form action="">
-            <p class="textoDeForm">En esta calculadora puedes ir anotando los gastos que vayas jaciendo en el mes, para asi poder llevar un
+        <div class="subContainer">
+            <p class="textoDeForm">En esta calculadora puedes ir anotando los gastos que vayas haciendo en el mes, para
+                asi poder llevar un
                 mejor control de tu presupuesto.</p>
-            <label class="label textoDeForm" for="budget">Pirmero establece un presupuesto con el que quieras comparar tus gastos.
-                Puede ser tu ingreso mensual.
-            </label>
-            <input type="number" name="budget">
-            <select name="moneda" id="">
-                <option value="MXN">MXN</option>
-                <option value="USD">USD</option>
-            </select>
-            <button>Actualizar presupuesto</button>
-        </form>
-        <table></table>
+            <form class="subCform" id="formBudget" action="">
+                <label class="label textoDeForm" for="budget">Pirmero establece un presupuesto con el que quieras comparar
+                    tus gastos.
+                    Puede ser tu ingreso mensual.
+                </label>
+                <input class="styleColor" type="number" value="budget" name="budget">
+                <select class="styleColor" name="moneda" id="">
+                    <option value="MXN">MXN</option>
+                    <option value="USD">USD</option>
+                </select>
+                <button class="styleColor">Actualizar presupuesto</button>
+            </form>
+            <form class="subCform" id="formExpenses">
+                <label class="label textoDeForm" for="expenses">Ahora, cada que vayas haciendo gastos, introduce el importe
+                    aquí para poder ir llevando un control mensual. 🤓
+                    También define qué tan necesario era hacer ese gasto.
+                </label>
+                <input class="styleColor" type="number" name="expenses">
+                <select class="styleColor" name="moneda" id="">
+                    <option value="Imprescindible">Imprescindible 🥵</option>
+                    <option value="Útil">Útil 🤗</option>
+                    <option value="Un lujo">Un lujo 😳</option>
+                    <option value="Improvisto">Improvisto ☹️</option>
+                </select>
+                <button class="styleColor">Añadir Gasto</button>
+            </form>
+        </div>
+        <div class="subContainer styleTable">
+            <p class="textoDeForm">El presupuesto mensual es: </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gasto </th>
+                        <th>Relevancia</th>
+                        <th>Saldo restante</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="first"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <script src="./main.js"></script>
 </body>

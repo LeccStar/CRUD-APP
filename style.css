@@ -1,12 +1,11 @@
 body{
     width: 100vw;
-    height: 100vh;
     background-image: url(./MEDIA/—Pngtree—golden\ falling\ stars_4604988.png), linear-gradient(#1F2440,#464AA6);
     background-size: 110px;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
     text-align: center;
@@ -14,24 +13,63 @@ body{
     text-shadow: #15182b 0 0 30px;
 }
 .container {
+    width: 90%;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
     margin-bottom: 1.5rem;
 }
-form{
+.subContainer {
     width: 20rem;
     height: 35rem;
     background-color: rgb(31, 37, 65, 0.90);
     border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    gap: .5rem;
+}
+.subCform{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: .9rem;
 }
 .textoDeForm{
-    margin: .5rem 1rem .5rem 1rem;
+    margin: .0 1.2rem .0 1.2rem;
     text-align: justify;
 }
 .label{
     font-size: .8em;
-    display: flex;
+}
+.styleColor{
+    background-color: rgb(69, 72, 165, .50);
+    color: #F2E205;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.5rem;
+    padding: .25rem;
+    text-align: center;
+}
+.styleColor option{
+    background-color: rgb(69, 72, 165);
+}
+.styleColor:focus-visible{
+    outline-color: #F2E205;
+}
+.styleTable{
+    min-width: 20rem;
+}
+table,
+td {
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
 }
