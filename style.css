@@ -42,6 +42,9 @@ body{
     margin: .0 1.2rem .0 1.2rem;
     text-align: justify;
 }
+#currentBudget{
+    text-align: center;
+}
 .label{
     font-size: .8em;
 }
@@ -60,16 +63,24 @@ body{
 .styleColor:focus-visible{
     outline-color: #F2E205;
 }
-.styleTable{
-    min-width: 20rem;
+.flex{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem 0 1rem 0;
 }
-table,
-td {
-    border: 1px solid #333;
+.styleTable{
+    min-width: 35rem;
+}
+.styleTable2{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
-thead,
-tfoot {
-    background-color: #333;
-    color: #fff;
+@media screen and (max-width: 400px) {
+    .styleTable{
+        min-width: 20rem;
+        font-size: .90em;
+    }
 }

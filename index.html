@@ -16,13 +16,13 @@
             <p class="textoDeForm">En esta calculadora puedes ir anotando los gastos que vayas haciendo en el mes, para
                 asi poder llevar un
                 mejor control de tu presupuesto.</p>
-            <form class="subCform" id="formBudget" action="">
+            <form class="subCform" id="formBudget">
                 <label class="label textoDeForm" for="budget">Pirmero establece un presupuesto con el que quieras comparar
                     tus gastos.
                     Puede ser tu ingreso mensual.
                 </label>
-                <input class="styleColor" type="number" value="budget" name="budget">
-                <select class="styleColor" name="moneda" id="">
+                <input class="styleColor" type="number" name="budget">
+                <select class="styleColor" name="currency" id="">
                     <option value="MXN">MXN</option>
                     <option value="USD">USD</option>
                 </select>
@@ -43,27 +43,25 @@
                 <button class="styleColor">Añadir Gasto</button>
             </form>
         </div>
-        <div class="subContainer styleTable">
-            <p class="textoDeForm">El presupuesto mensual es: </p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Gasto </th>
-                        <th>Relevancia</th>
-                        <th>Saldo restante</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="first"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="subContainer styleTable flex">
+            <p class="textoDeForm" id="currentBudget">El presupuesto mensual es: </p>
+            <div class="styleTable">
+                <div class="styleTable2">
+                    <h4>Gasto</h4>
+                    <h4>Importancia</h4>
+                    <h4>Editar</h4>
+                    <h4>Borrar</h4>
+                </div>
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="./main.js"></script>
+    <script defer src="./main.js"></script>
 </body>
 
 </html>
