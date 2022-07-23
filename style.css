@@ -75,7 +75,7 @@ body{
 }
 .styleTable2{
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 30% 30% 20% 20%;
 }
 
 @media screen and (max-width: 400px) {
