@@ -25,6 +25,7 @@ const sendForm = (e) => {
     else{
         localStorage.setItem("budget",JSON.stringify(arrayBudget))
         setBudget()
+        setExpenses()
         form.reset()
     }
 }
