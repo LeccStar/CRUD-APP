@@ -1,7 +1,10 @@
+
 body{
     width: 100vw;
+    height: 100%;
     background-image: url(./MEDIA/—Pngtree—golden\ falling\ stars_4604988.png), linear-gradient(#1F2440,#464AA6);
     background-size: 110px;
+    background-attachment: fixed;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -77,6 +80,12 @@ body{
     display: grid;
     grid-template-columns: 30% 30% 20% 20%;
 }
+
+.edits{
+    border: #F2E205 solid 2px;
+    box-shadow: 0 0 8px #F2E205;
+}
+
 
 @media screen and (max-width: 400px) {
     .styleTable{
